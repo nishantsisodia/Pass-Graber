@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import scrollbar from 'tailwind-scrollbar'; // Importing the scrollbar plugin
+
 export default {
   content: [
     "./index.html",
@@ -8,13 +10,13 @@ export default {
     extend: {
       screens: {
         // Custom responsive breakpoint
-        sPhone: '300px', // Custom breakpoint for 500px
+        sPhone: '300px', // Custom breakpoint for 300px
         mPhone: "400px",
-        lPhone:"500px",
+        lPhone: "500px",
       },
     },
   },
   plugins: [
-    require('tailwind-scrollbar')({ nocompatible: true }),
+    scrollbar({ nocompatible: true }), // Using the imported scrollbar plugin
   ],
 }
