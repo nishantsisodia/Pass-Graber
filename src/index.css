@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+
+    font-family: "Roboto", sans-serif;
+   transition: all 0.1s;
+
+}
+
+/* By default hide the thumb */
+.scrollbar-thumb-hidden::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.scrollbar-thumb-hidden:hover::-webkit-scrollbar-thumb {
+    background: #1f2937; /* Thumb color on hover */
+    border-radius: 9999px; /* Fully rounded thumb */
+}
+
+
+/* For Firefox */
+.scrollbar-thumb-hidden {
+    scrollbar-color: transparent transparent; /* Thumb and track hidden */
+}
+
+.scrollbar-thumb-hidden:hover {
+    scrollbar-color: #1f2937 transparent; /* Thumb visible on hover */
+}
+
+.BackGroundMG, .ModalBG{
+
+background: #536976;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tableBody{
+background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right,#141E30, #243B55 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+
+
+}
+
+table{
+    overflow-wrap: anywhere;
+}
+
